@@ -817,7 +817,8 @@ drawbar(Monitor *m)
 		drw_setscheme(drw, scheme[SchemeNorm]);
 		sw = TEXTW(stext) - lrpad / 2 + 2; /* 2px right padding */
 
-		sw += stw; // sanjay: addedsystem tray width
+		//sw += stw; // sanjay: addedsystem tray width
+
 		//drw_text(drw, m->ww - sw - stw, 0, sw, bh, lrpad / 2 - 2, stext, 0);
 		while (1) {
 			if ((unsigned int)*ts > LENGTH(colors)) { ts++; continue ; }

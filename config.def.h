@@ -25,7 +25,7 @@ static const char col_gray4[]       = "#fefefe";
 static const char col_cyan[]        = "#454567";//"#005577";
 
 static const char col_black[]       = "#282c34";
-static const char col_red[]         = "#e55496";
+static const char col_red[]         = "#ec5a9d";
 static const char col_yellow[]      = "#4cdbe0";
 static const char col_white[]       = "#ffffff";
 
