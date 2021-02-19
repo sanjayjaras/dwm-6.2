@@ -7,7 +7,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int gappx     = 10;        /* gaps between windows */
+static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing = 2;   /* systray spacing */
@@ -29,8 +29,8 @@ static const char col_red[]         = "#ec5a9d";
 static const char col_blue[]      	= "#4cdbe0";
 static const char col_white[]       = "#ffffff";
 
-static const char active_border[]       = "#005577";
-static const char inactive_border[]     = "#444444";
+static const char active_border[]   = "#bc0a4d";
+static const char inactive_border[] = "#005577";
 
 
 //Added extra colors to work with status commands and status colors
