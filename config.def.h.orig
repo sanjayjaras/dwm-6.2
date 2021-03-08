@@ -19,14 +19,10 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#dddddd"; 
 static const char col_gray4[]       = "#fefefe";
 static const char col_cyan[]        = "#454567";//"#005577";
-
-static const char active_border[]   = "#bc0a4d";
-static const char inactive_border[] = "#005577";
-
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, inactive_border },
-	[SchemeSel]  = { col_gray4, col_cyan,  active_border  },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
 /* tagging */
@@ -71,7 +67,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 //static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *dmenucmd[] = {"dmenu_run", NULL};
-static const char *termcmd[]  = { "kitty", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *rofi_dmenu[]  = { "/home/sanjay/.config/rofi/launchers/text/launcher_1.sh", NULL };
 static const char *rofi[]  = { "/home/sanjay/.config/rofi/launchers/misc/launcher.sh", NULL };
 static const char *logout[]  = { "oblogout", NULL };
@@ -160,23 +156,5 @@ static Button buttons[] = {
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
-};
-
-static const char *ipcsockpath = "/tmp/dwm.sock";
-static IPCCommand ipccommands[] = {
-  IPCCOMMAND(  view,                1,      {ARG_TYPE_UINT}   ),
-  IPCCOMMAND(  toggleview,          1,      {ARG_TYPE_UINT}   ),
-  IPCCOMMAND(  tag,                 1,      {ARG_TYPE_UINT}   ),
-  IPCCOMMAND(  toggletag,           1,      {ARG_TYPE_UINT}   ),
-  IPCCOMMAND(  tagmon,              1,      {ARG_TYPE_UINT}   ),
-  IPCCOMMAND(  focusmon,            1,      {ARG_TYPE_SINT}   ),
-  IPCCOMMAND(  focusstack,          1,      {ARG_TYPE_SINT}   ),
-  IPCCOMMAND(  zoom,                1,      {ARG_TYPE_NONE}   ),
-  IPCCOMMAND(  incnmaster,          1,      {ARG_TYPE_SINT}   ),
-  IPCCOMMAND(  killclient,          1,      {ARG_TYPE_SINT}   ),
-  IPCCOMMAND(  togglefloating,      1,      {ARG_TYPE_NONE}   ),
-  IPCCOMMAND(  setmfact,            1,      {ARG_TYPE_FLOAT}  ),
-  IPCCOMMAND(  setlayoutsafe,       1,      {ARG_TYPE_PTR}    ),
-  IPCCOMMAND(  quit,                1,      {ARG_TYPE_NONE}   )
 };
 
