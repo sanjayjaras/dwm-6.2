@@ -77,6 +77,7 @@ static const char *rofi[]  = { "/home/sanjay/.config/rofi/launchers/misc/launche
 static const char *logout[]  = { "oblogout", NULL };
 static const char *wallpaper[]  = { "/home/sanjay/.config/qtile/wallpaper.sh", NULL };
 static const char *print_screen[]  = { "flameshot", "gui", NULL };
+static const char *lock_screen[]  = { "light-locker-command", "-l", NULL };
 
 static const char *upvol[]   = { "amixer", "-q", "-D", "pulse", "sset", "Master", "5%+", NULL };
 static const char *downvol[] = { "amixer", "-q", "-D", "pulse", "sset", "Master", "5%-", NULL };
@@ -102,7 +103,8 @@ static Key keys[] = {
 	{ MODKEY,			            XK_d, 	   spawn,          {.v = rofi_dmenu } },
 	{ MODKEY,			            XK_x, 	   spawn,          {.v = logout } },
 	{ MODKEY|ControlMask,           XK_w,      spawn,          {.v = wallpaper } },
-	{ 0,           					XK_Print,      spawn,      {.v = print_screen } },
+	{ 0,           					XK_Print,  spawn,      	   {.v = print_screen } },
+	{ MODKEY,      					XK_l,      spawn,      	   {.v = lock_screen } },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	//Switch in stack
