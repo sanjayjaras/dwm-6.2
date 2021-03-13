@@ -70,7 +70,8 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 //static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *dmenucmd[] = {"dmenu_run", NULL};
+//static const char *dmenucmd[] = {"dmenu_run", NULL};
+static const char *dmenucmd[] = {"/home/sanjay/applications/dwm-6.2/dmenu.sh", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *rofi_dmenu[]  = { "/home/sanjay/.config/rofi/launchers/text/launcher_1.sh", NULL };
 static const char *rofi[]  = { "/home/sanjay/.config/rofi/launchers/misc/launcher.sh", NULL };
