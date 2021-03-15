@@ -11,7 +11,8 @@ static const int usealtbar          = 1;        /* 1 means use non-dwm status ba
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
 static const char *alttrayname      = "tray";    /* Polybar tray instance name */
 static const char *altbarcmd        = "$HOME/.config/polybar/launcher.sh"; /* Alternate bar launch command */
-static const char *fonts[]          = {"Cascadia Code Pl-bold:size=10:antialias=true:autohint=true:style=Bold",
+static const char *fonts[]          = { "MesloLGS NF:size=12:antialias=true:autohint=true:style=Regular",
+										"Cascadia Code Pl-bold:size=10:antialias=true:autohint=true:style=Bold",
 									   "Font Awesome 5 Free Solid:size=10:antialias=true:autohint=true:style=Bold"};
 static const char dmenufont[]       = "Cascadia Code Pl-bold:size=10";
 static const char col_gray1[]       = "#111111";
@@ -31,7 +32,7 @@ static const char *colors[][3]      = {
 
 /* tagging */
 //static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-static const char *tags[] = { "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "ﴥ", "", "", "", "", "", "", "ﱮ" };
 
 static const Rule rules[] = {
 	/* xprop(1):
