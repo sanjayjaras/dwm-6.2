@@ -2,7 +2,7 @@
 /** Added for volume hardware keys **/
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -77,7 +77,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *rofi_dmenu[]  = { "/home/sanjay/.config/rofi/launchers/text/launcher_1.sh", NULL };
 static const char *rofi[]  = { "/home/sanjay/.config/rofi/launchers/misc/launcher.sh", NULL };
 static const char *logout[]  = { "oblogout", NULL };
-static const char *wallpaper[]  = { "/home/sanjay/.config/qtile/wallpaper.sh", NULL };
+static const char *wallpaper[]  = { "/home/sanjay/.config/polybar/scripts/wallpaper.sh", NULL };
 static const char *print_screen[]  = { "flameshot", "gui", NULL };
 static const char *lock_screen[]  = { "light-locker-command", "-l", NULL };
 
