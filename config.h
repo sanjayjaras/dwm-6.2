@@ -2,7 +2,7 @@
 /** Added for volume hardware keys **/
 #include <X11/XF86keysym.h>
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -40,8 +40,9 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "galculator",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     		NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",  		NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
